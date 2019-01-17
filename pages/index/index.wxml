@@ -1,0 +1,145 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='search-bar'>
+    <view class='search-item'>
+      <icon type="search" size="30rpx" color="{{icoColor}}"></icon>
+      <input placeholder='请输入搜索关键词'></input>
+    </view>
+  </view>
+  <swiper class='swiper-list' indicator-dots="true" indicator-active-color='#FFF' autoplay="true" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{slideshow}}" wx:for-item="element" wx:for-index="index" wx:key="index">
+      <swiper-item class='banner'>
+        <image src="{{element}}" model="aspectFit" class="slide-image" style='width:690rpx;height:388rpx;' />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='item-list'>
+    <view class='item'>
+      <view class='item-image'>
+        <image src='../../static/images/item.jpg' model="aspectFit" style='width:320rpx;height:320rpx;'></image>
+        <view class='qiang'>
+          <view style='position:relative'>
+            <image src='../../static/images/qiang.png' style='width:170rpx;height:42rpx;'></image>
+            <view class='timer'>4:02:59</view>
+            <view class='back'></view>
+          </view>
+        </view>
+      </view>
+      <view class='item-name'>APPLE/苹果 iPhone XS MAX</view>
+      <view class='item-info'>
+        <view class='price'>¥7500</view>
+        <view class='vistors'>1322人围观</view>
+        <view class='extra-info'>
+          <image src='../../static/images/extra.png' style='width:32rpx;height:32rpx;'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item-image'>
+        <image src='../../static/images/item.jpg' model="aspectFit" style='width:320rpx;height:320rpx;'></image>
+        <view class='qiang'>
+          <view style='position:relative'>
+            <image src='../../static/images/qiang.png' style='width:170rpx;height:42rpx;'></image>
+            <view class='timer'>4:02:59</view>
+            <view class='back'></view>
+          </view>
+        </view>
+      </view>
+      <view class='item-name'>APPLE/苹果 iPhone XS MAX</view>
+      <view class='item-info'>
+        <view class='price'>¥7500</view>
+        <view class='vistors'>1322人围观</view>
+        <view class='extra-info'>
+          <image src='../../static/images/extra.png' style='width:32rpx;height:32rpx;'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item-image'>
+        <image src='../../static/images/item.jpg' model="aspectFit" style='width:320rpx;height:320rpx;'></image>
+        <view class='qiang'>
+          <view style='position:relative'>
+            <image src='../../static/images/qiang.png' style='width:170rpx;height:42rpx;'></image>
+            <view class='timer'>4:02:59</view>
+            <view class='back'></view>
+          </view>
+        </view>
+      </view>
+      <view class='item-name'>APPLE/苹果 iPhone XS MAX</view>
+      <view class='item-info'>
+        <view class='price'>¥7500</view>
+        <view class='vistors'>1322人围观</view>
+        <view class='extra-info'>
+          <image src='../../static/images/extra.png' style='width:32rpx;height:32rpx;'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item-image'>
+        <image src='../../static/images/item.jpg' model="aspectFit" style='width:320rpx;height:320rpx;'></image>
+        <view class='qiang'>
+          <view style='position:relative'>
+            <image src='../../static/images/qiang.png' style='width:170rpx;height:42rpx;'></image>
+            <view class='timer'>4:02:59</view>
+            <view class='back'></view>
+          </view>
+        </view>
+      </view>
+      <view class='item-name'>APPLE/苹果 iPhone XS MAX</view>
+      <view class='item-info'>
+        <view class='price'>¥7500</view>
+        <view class='vistors'>1322人围观</view>
+        <view class='extra-info'>
+          <image src='../../static/images/extra.png' style='width:32rpx;height:32rpx;'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item-image'>
+        <image src='../../static/images/item.jpg' model="aspectFit" style='width:320rpx;height:320rpx;'></image>
+        <view class='qiang'>
+          <view style='position:relative'>
+            <image src='../../static/images/qiang.png' style='width:170rpx;height:42rpx;'></image>
+            <view class='timer'>4:02:59</view>
+            <view class='back'></view>
+          </view>
+        </view>
+      </view>
+      <view class='item-name'>APPLE/苹果 iPhone XS MAX</view>
+      <view class='item-info'>
+        <view class='price'>¥7500</view>
+        <view class='vistors'>1322人围观</view>
+        <view class='extra-info'>
+          <image src='../../static/images/extra.png' style='width:32rpx;height:32rpx;'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item-image'>
+        <image src='../../static/images/item.jpg' model="aspectFit" style='width:320rpx;height:320rpx;'></image>
+        <view class='qiang'>
+          <view style='position:relative'>
+            <image src='../../static/images/qiang.png' style='width:170rpx;height:42rpx;'></image>
+            <view class='timer'>4:02:59</view>
+            <view class='back'></view>
+          </view>
+        </view>
+      </view>
+      <view class='item-name'>APPLE/苹果 iPhone XS MAX</view>
+      <view class='item-info'>
+        <view class='price'>¥7500</view>
+        <view class='vistors'>1322人围观</view>
+        <view class='extra-info'>
+          <image src='../../static/images/extra.png' style='width:32rpx;height:32rpx;'></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

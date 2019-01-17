@@ -1,0 +1,109 @@
+.search-bar{
+  background-color: #fff;
+  width: 650rpx;
+  border: 1rpx solid #e6e6e6;
+  border-radius: 35rpx;
+  margin-left: 50rpx;
+}
+.search-item{
+  display: flex;
+  flex-direction: row;
+  padding: 8rpx 8rpx;
+}
+
+.search-item icon{
+  height: 30rpx;
+  padding-right: 12rpx;
+  padding-top: 12rpx;
+  line-height: 35rpx;
+}
+
+.search-item input{
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #BBBBBB;
+  letter-spacing: 0;
+  line-height: 35rpx;
+}
+
+.swiper-list{
+  padding: 10rpx 30rpx 0rpx;
+  background-color: #fff;
+}
+.swiper image {
+  width: 100%;
+  height: auto;
+}
+
+.item-list{
+  background: #F8F9FE;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+
+.item-name{
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  width: 320rpx;
+  padding-left: 25rpx;
+  margin-top: 2rpx;
+}
+
+.item-info{
+  display: flex;
+  flex-direction: row;
+  width: 320rpx;
+  padding-left: 25rpx;
+}
+
+.price{
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #EC6436;
+  width: 25%;
+}
+
+.vistors{
+  font-family: PingFangSC-Regular;
+  font-size: 16rpx;
+  color: #cdcdcd;
+  width: 55%;
+  padding-top: 8rpx;
+}
+
+.item{
+  background: #fff;
+  width: 320rpx;
+  margin: 27.5rpx;
+  box-shadow: 1rpx 1rpx 1rpx #cdcdcd;
+}
+
+.item-image{
+  position: relative;
+}
+
+.qiang{
+  position: absolute;
+  bottom: 50rpx;
+  width: 170rpx;
+  margin-left: 75rpx;
+}
+
+.back{
+  position:absolute;
+  top:0;
+  width:170rpx;
+  height:42rpx;
+  opacity: 0.5;
+}
+
+.timer{
+  color: #fff;
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  position: absolute;
+  left: 70rpx;
+  top: 6rpx;
+  height:42rpx;
+}
