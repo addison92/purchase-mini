@@ -130,11 +130,27 @@ function showErrorToast(msg) {
   })
 }
 
+function countDown(that) {
+  if (that.data.list.length > 0) {
+    setTimeout(() => {
+      let new_list = Object.assign([], that.data.list);
+      new_list.map(function (e) {
+        e.seconds = e.seconds - 1;
+        return e
+      });
+      that.setData({
+        list: new_list
+      });
+    }, 1000);
+  }
+}
+
 module.exports = {
   formatTime,
   request,
   showErrorToast,
   checkSession,
   login,
-  formatDate
+  formatDate,
+  countDown
 }

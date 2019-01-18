@@ -10,9 +10,40 @@ var filters = {
       result = str.substring(0,8)+'***'
     }
     return result
+  },
+
+  //时间转换
+  formatTime: function (time) {
+    var second = 0;
+    var minutes = 0;
+    var hours = 0;
+    var day = 0;
+    if (time) {
+      second = time;
+      if (second > 59) {
+        minutes = Math.floor(second / 60);
+        second = second % 60;
+        if (minutes > 59) {
+          hours = Math.floor(minutes / 60);
+          minutes = minutes % 60;
+          if (hours > 23) {
+            day = Math.floor(hours / 24);
+            hours = hours % 60;
+          }
+        }
+      }
+    }
+
+    var ds = day > 9 ? day : day + '天';
+    var hs = hours > 9 ? hours : '0' + hours;
+    var ms = minutes > 9 ? minutes : '0' + minutes;
+    var ss = second > 9 ? second : '0' + second;
+
+    return ds > 0 ? ds + ' ' + hs + ':' + ms + ':' + ss : hs + ':' + ms + ':' + ss;
   }
 }
 module.exports = {
   toNumber: filters.toNumber,
-  formatAddress: filters.formatAddress
+  formatAddress: filters.formatAddress,
+  formatTime: filters.formatTime
 }

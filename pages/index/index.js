@@ -14,9 +14,84 @@ Page({
     interval: 5000,
     duration: 1000,
     typeList: [],
-    slideshow: ["../../static/images/1.jpg", "../../static/images/2.jpg", "../../static/images/3.jpg", "../../static/images/4.jpg"],
+    slideshow: [
+      "../../static/images/1.jpg",
+      "../../static/images/2.jpg",
+      "../../static/images/3.jpg",
+      "../../static/images/4.jpg"
+    ],
+    list: [{
+      id: 1,
+      url: '../../static/images/item.jpg',
+      name: 'APPLE/苹果 iPhone XS MAX',
+      price: '9800',
+      visitors: '1350',
+      seconds: 120
+    }, {
+      id: 2,
+      url: '../../static/images/item.jpg',
+      name: 'APPLE/苹果 iPhone XS',
+      price: '7800',
+      visitors: '5350',
+      seconds: 100
+    }, {
+      id: 3,
+      url: '../../static/images/item.jpg',
+      name: 'VIVO NEX 前后双屏',
+      price: '4900',
+      visitors: '8350',
+      seconds: 220
+    }, {
+      id: 4,
+      url: '../../static/images/item.jpg',
+      name: 'HUAWEI MATE 20 PRO',
+      price: '5500',
+      visitors: '9340',
+      seconds: 120
+    }, {
+      id: 5,
+      url: '../../static/images/item.jpg',
+      name: 'OPPO FIND X',
+      price: '4500',
+      visitors: '1350',
+      seconds: 20
+    }, {
+      id: 6,
+      url: '../../static/images/item.jpg',
+      name: '荣耀 MAGIC 2',
+      price: '3500',
+      visitors: '3350',
+      seconds: 420
+    }],
+    currentSelected:""
   },
-  onShow() { },
+  onShow() {
+    this.refreshList();
+  },
+
+  onExtraClick(e){
+    let id = e.currentTarget.dataset.id;
+    this.setData({
+      currentSelected: id
+    });
+  },
+
+  refreshList() {
+    if (this.data.list.length > 0) {
+      let that = this;
+      let new_list = Object.assign([], that.data.list);
+      new_list.map(function (e) {
+        if (e.seconds > 0) {
+          e.seconds = e.seconds - 1;
+        }
+        return e
+      });
+      that.setData({
+        list: new_list
+      });
+    }
+    setTimeout(this.refreshList, 1000);
+  },
 
   getCourseTypesForList() {
     let that = this
@@ -40,10 +115,6 @@ Page({
     let that = this
     let condition = this.data.keyword;
     let courseType = this.data.currentType;
-
-    // if (courseType==-1){
-    //   courseType = ""
-    // }
 
     //有查询条件时重置为第一页
     if (courseType || condition) {
