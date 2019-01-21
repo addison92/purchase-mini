@@ -1,2 +1,30 @@
-<!--pages/message/index.wxml-->
-<text>pages/message/index.wxml</text>
+<view class='container'>
+  <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="">
+
+    <view class="content">
+      <view class='msg-status'>
+        <view class='status'>已读</view>
+        <view class='time'>2小时前</view>
+      </view>
+      <view class='basic-info'>
+        <image src='../../static/images/item.jpg' style='width:140rpx;height:140rpx;'></image>
+        <view class='introduction'>
+          <view>Apple/苹果 iPhone XS Max 4G智能手机苹果xs全面屏手机</view>
+          <view>7500</view>
+        </view>
+        <view class='purchase-status'>
+          已购
+        </view>
+      </view>
+      <view>
+        尊敬的用户：巴拉巴拉。。
+      </view>
+      <view class='more'>
+        全文
+      </view>
+    </view>
+
+    <view class="del" catchtap="del" data-index="{{index}}">删除</view>
+
+  </view>
+</view>

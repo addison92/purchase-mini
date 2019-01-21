@@ -41,8 +41,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "feedback",
-					"pathName": "pages/feedback/index/index",
+					"name": "message",
+					"pathName": "pages/message/index",
 					"query": "",
 					"scene": "1001"
 				}
