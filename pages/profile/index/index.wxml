@@ -1,2 +1,46 @@
 <!--pages/profile/index/index.wxml-->
-<text>pages/profile/index/index.wxml</text>
+<view class='container'>
+  <image src='../../../static/images/profile-cover.png' style='width:750rpx;height:380rpx;margin-bottom:30rpx;'></image>
+
+  <view>
+    <view class='item'>
+      <image src='../../../static/images/shou-cang.png' style='width:54rpx;height:54rpx;'></image>
+      <view class='content'>收藏</view>
+    </view>
+
+    <view class='item'>
+      <image src='../../../static/images/gou-mai.png' style='width:54rpx;height:54rpx;'></image>
+      <view class='content'>购买记录</view>
+    </view>
+
+    <view class='item'>
+      <image src='../../../static/images/wu-jian.png' style='width:54rpx;height:54rpx;'></image>
+      <view class='content'>物件追踪</view>
+      <image src='../../../static/images/arrow-right.png'  class='arrow-right'></image>
+    </view>
+
+    <view class='item'>
+      <image src='../../../static/images/cha-shou.png' style='width:54rpx;height:54rpx;'></image>
+      <view class='content'>物件查收</view>
+      <image src='../../../static/images/arrow-right.png'  class='arrow-right'></image>
+    </view> 
+
+    <view class='item'>
+      <image src='../../../static/images/ke-fu.png' style='width:54rpx;height:54rpx;'></image>
+      <view class='content'>联系客服</view>
+      <image src='../../../static/images/arrow-right.png'  class='arrow-right'></image>
+    </view> 
+
+    <view class='item'>
+      <image src='../../../static/images/bang-zhu.png' style='width:54rpx;height:54rpx;'></image>
+      <view class='content'>帮助中心</view>
+      <image src='../../../static/images/arrow-right.png'  class='arrow-right'></image>
+    </view> 
+
+    <view class='item'>
+      <image src='../../../static/images/fen-xiang.png' style='width:54rpx;height:54rpx;'></image>
+      <view class='content'>分享好友</view>
+      <image src='../../../static/images/arrow-right.png'  class='arrow-right'></image>
+    </view> 
+  </view>
+</view>

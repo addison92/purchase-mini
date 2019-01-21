@@ -1,14 +1,15 @@
 {
   "pages": [
+    "pages/profile/index/index",
     "pages/index/index",
     "pages/message/index",
-    "pages/cart/index/index",
-    "pages/profile/index/index"
+    "pages/cart/index/index"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "awesomeApp",
+    "navigationBarTitleText": "Purchase-Mini",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

@@ -1,1 +1,32 @@
 /* pages/profile/index/index.wxss */
+.container{
+  background-color: #F2F6FC
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1rpx 1rpx 1rpx #cdcdcd;
+  background-color: #FFF;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+
+.item image{
+  padding: 16rpx 25rpx;
+}
+
+.content{
+  padding: 16rpx 0;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #606266;
+  line-height: 54rpx;
+}
+
+.arrow-right{
+  position: absolute;
+  right: 1rpx;
+  width:48rpx;
+  height:48rpx;
+  padding: 19rpx 0;
+}
