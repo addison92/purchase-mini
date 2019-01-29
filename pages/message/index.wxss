@@ -39,7 +39,7 @@ transform: translateX(180rpx);
 
 margin-left: -90px;
 background-color: #fff;
-margin-bottom: 30rpx;
+margin-top: 30rpx;
 }
 
 .del {
@@ -81,6 +81,7 @@ transform: translateX(0);
   position: relative;
   display: flex;
   flex-direction: row;
+  border-bottom: 1rpx solid #dbdbdb;
 }
 
 .status{
@@ -106,5 +107,7 @@ transform: translateX(0);
   padding-left: 60rpx;
 }
 .more{
-  float:right;
+  border-top: 1rpx solid #dbdbdb;
+  position: relative;
+  height: 30rpx;
 }

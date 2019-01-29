@@ -20,7 +20,7 @@
         尊敬的用户：巴拉巴拉。。
       </view>
       <view class='more'>
-        全文
+        <view class='time'>全文</view>
       </view>
     </view>
 

@@ -42,7 +42,7 @@
 				{
 					"id": 0,
 					"name": "message",
-					"pathName": "pages/message/index",
+					"pathName": "pages/profile/favorite/index",
 					"query": "",
 					"scene": "1001"
 				}

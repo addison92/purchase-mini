@@ -3,8 +3,8 @@
     "pages/profile/index/index",
     "pages/index/index",
     "pages/message/index",
-    "pages/cart/index/index"
-    
+    "pages/cart/index/index",
+    "pages/profile/favorite/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

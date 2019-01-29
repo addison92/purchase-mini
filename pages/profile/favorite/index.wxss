@@ -1,0 +1,55 @@
+/* pages/profile/favorite/index.wxss */
+.container{
+  background-color: #F2F6FC
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  /* border: 1rpx solid #cdcdcd; */
+  border-radius: 12rpx;
+  box-shadow: 1rpx 1rpx 1rpx #cdcdcd;
+  background-color: #fff;
+  margin: 25rpx 70rpx;
+}
+
+.desc{
+  padding-left: 10rpx;
+  width: 350rpx;
+  
+}
+
+.time{
+  width: 140rpx;
+}
+
+.title{
+  font-family: PingFangSC-Regular;
+  font-size: 23rpx;
+  line-height: 30rpx;
+  height: 90rpx;
+}
+
+.money{
+  font-family: PingFangSC-Regular;
+  line-height: 50rpx;
+  height: 50rpx;
+}
+
+.timer{
+  padding-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  height: 70rpx;
+}
+
+.number{
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 18rpx;
+  line-height: 25rpx;
+  height: 40rpx;
+}
+

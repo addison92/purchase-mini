@@ -1,0 +1,16 @@
+<!--pages/profile/favorite/index.wxml-->
+<view class='container'>
+  <image src='../../../static/images/profile-cover.png' style='width:750rpx;height:380rpx;margin-bottom:30rpx;'></image>
+
+  <view class='item'>
+    <image src='../../../static/images/item.jpg' style='width:140rpx;height:140rpx;'></image>
+    <view class='desc'>
+      <view class='title'>Apple iPhone XS 256G 金色 全网通4G手机</view>
+      <view class='money'>$7500</view>
+    </view>
+    <view class='time'>
+      <view class='timer'>00:26:32</view>
+      <view class='number'>围观人数：6666</view>
+    </view>
+  </view>
+</view>
